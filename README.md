@@ -194,3 +194,132 @@ Depending on the Lead time, average price per room can be adjusted to attract mo
 Depending on the number of special requests, hotel can adjust the average price per room to maintain resources and brand equity.
 
 Hotel can come up with policies on cancellations or refund based on lead time.
+
+Project 4 : EasyVisa
+
+Objective  :  The increasing number of applicants every year calls for a Machine Learning based solution that can help in shortlisting the candidates having higher chances of VISA approval. OFLC has hired the firm EasyVisa for data-driven solutions. You as a data scientist at EasyVisa have to analyze the data provided and, with the help of a classification model:
+
+Facilitate the process of visa approvals.
+Recommend a suitable profile for the applicants for whom the visa should be certified or denied based on the drivers that significantly influence the case status.
+
+📂 Dataset
+The data contains the different attributes of the employee and the employer. The detailed data dictionary is given below.
+
+case_id: ID of each visa application
+continent: Information of continent the employee
+education_of_employee: Information of education of the employee
+has_job_experience: Does the employee have any job experience? Y= Yes; N = No
+requires_job_training: Does the employee require any job training? Y = Yes; N = No
+no_of_employees: Number of employees in the employer's company
+yr_of_estab: Year in which the employer's company was established
+region_of_employment: Information of foreign worker's intended region of employment in the US.
+prevailing_wage: Average wage paid to similarly employed workers in a specific occupation in the area of intended employment. The purpose of the prevailing wage is to ensure that the foreign worker is not underpaid compared to other workers offering the same or similar service in the same area of employment.
+unit_of_wage: Unit of prevailing wage. Values include Hourly, Weekly, Monthly, and Yearly.
+full_time_position: Is the position of work full-time? Y = Full-Time Position; N = Part-Time Position
+case_status: Flag indicating if the Visa was certified or denied
+
+Tools & Technologies
+
+Python
+
+Pandas, NumPy
+
+Scikit-learn
+
+Matplotlib / Seaborn
+
+Jupyter Notebook
+
+🤖 Machine Learning Model
+decision trees, bagging and boosting methods
+
+Addressed Below :
+
+Exploratory Data Analysis
+- Univariate analysis
+- Bivariate analysis
+- Used appropriate visualizations to identify the patterns and insights
+- Key meaningful observations on individual variables and the relationship between variables
+- - Prepare the data for analysis
+- Feature Engineering
+- Missing value Treatment
+- Outlier Treatment
+
+  Business Insights and Recommendations
+  Continent affecting visa approval
+• Maximum employees who are certified for visa are from Europe
+• second highest employees who are certified for visa are from Africa
+• People from Oceania are least preferred for visa
+Education level-affecting visa approval
+• People are who are holding doctorate degree are considered first for visa certification
+• Next preferred people are the people who holds master’s degree
+• Next preferred are the people who holds degree
+• High school qualified people are least preferred for the visa certification
+Prior Job experience affecting visa approval
+• Most of the employees are having prior job experience and preferred more for visa approval
+Job training affecting visa approval
+• Most of the employees does not need any job training and these people are more preferred for visa as they are cost effective
+
+Other insights into the data
+• Full time working employees are preferred more for visa approval
+• 67% employee's visa is certified
+• 33% employee's visa is not certified
+• prevailing wages is higher in Midwest and Island
+• The median prevailing wage for the certified applications is slightly higher as compared to denied applications.
+
+Recommendations
+• Training and test performance of ada boost data with under sampled data is comparable i.e. 81%
+• we can conclude that ada boost with under sampled data model is more generalised and we can go with
+this model to predict the visa approval process
+
+Project 5 : Unsupervised_AllLife
+
+Objective  :To identify different segments in the existing customers, based on their spending patterns as well as past interaction with the bank, using clustering algorithms, and provide recommendations to the bank on how to better market to and service these customers.
+
+ Data Description
+The data provided is of various customers of a bank and their financial attributes like credit limit, the total number of credit cards the customer has, and different channels through which customers have contacted the bank for any queries (including visiting the bank, online, and through a call center).
+
+Data Dictionary
+Sl_No: Primary key of the records
+Customer Key: Customer identification number
+Average Credit Limit: Average credit limit of each customer for all credit cards
+Total credit cards: Total number of credit cards possessed by the customer
+Total visits bank: Total number of visits that the customer made (yearly) personally to the bank
+Total visits online: Total number of visits or online logins made by the customer (yearly)
+Total calls made: Total number of calls made by the customer to the bank or its customer service department (yearly)
+
+Model Building :
+K-means Clustering : Ploting the Elbow curve 
+- Checking Silhouette Scores
+- Figuring out the appropriate number of clusters
+- Clustering Profiling
+Hierarchical Clustering
+- Ploting dendrograms for each linkage method
+- Checking cophenetic correlation for each linkage method
+- Figuring out the appropriate number of clusters
+- Cluster Profiling
+
+  Addressed Below :
+  Exploratory Data Analysis
+- Univariate analysis
+- Bivariate analysis
+- Used appropriate visualizations to identify the patterns and insights
+- Key meaningful observations on individual variables and the relationship between variables
+- Data Preprocessing
+- Missing Value Treatment (with rationale if needed)
+- Outlier Detection and Treatment (with rationale if needed)
+- Feature Engineering (with rationale if needed)
+- Data Scaling (with rationale if needed)
+
+  Insights and Recommendations
+- As there are less data here, both clusters took same time to execute
+-Both clustering methods produced 3 clusters
+-K means has 386 observations in cluster 0 ,224 observations in cluster 1 and 50 observations in cluster 2
+-Cluster 2 is having customers who are having more credit card limit, maximum credit cards and k means segregated this cluster with 50 observations.
+-AllLife bank needs to focus more on cluster 2 as it is having highest credit limits and credit cards, and this group could be at more risk if they default
+-Cluster 1 is having 224 observations, indicates it contains customers who are having less credit card limits and they show low risk to the bank
+-Cluster 0 is having 386 observations, indicates it contains customers who are having average credit card limit, and they show moderate risk to the bank
+-Hierarchical cluster has 386 observations in cluster 0 ,50 observations in cluster 1 and 224 observations in cluster 2.
+-Cluster 2 is having customers who are having more credit card limit, maximum credit cards and k means segregated this cluster with 224 observations.
+-Both methods produced same no of clusters and observations, but k means segregated less customers in cluster 2 which can show high risk to the bank and as it is having less no of customers, it is more cost effective and easily manageable and hierarchical cluster methodology segregated more customers in cluster 2 which can show high risk to the bank and as it is having more no of customers, it can become expensive and difficult to manage large no of customers who can become high risk to the bank if they default
+-We can conclude that AllLife bank can go with K means cluster methodology
