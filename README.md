@@ -323,3 +323,75 @@ Hierarchical Clustering
 -Cluster 2 is having customers who are having more credit card limit, maximum credit cards and k means segregated this cluster with 224 observations.
 -Both methods produced same no of clusters and observations, but k means segregated less customers in cluster 2 which can show high risk to the bank and as it is having less no of customers, it is more cost effective and easily manageable and hierarchical cluster methodology segregated more customers in cluster 2 which can show high risk to the bank and as it is having more no of customers, it can become expensive and difficult to manage large no of customers who can become high risk to the bank if they default
 -We can conclude that AllLife bank can go with K means cluster methodology
+
+
+Project 6 : AI
+
+# 🌍 AI-Based Multilingual Speech & Text Processing System
+
+This project is an AI-powered automation system that performs **multilingual text translation** and **speech-to-text transcription** using the **SarvamAI API** and Python. It supports **Indian regional languages** such as **Gujarati and Hindi**, enabling real-world applications in accessibility, customer support, and voice-enabled systems.
+
+---
+
+## 🚀 Project Features
+
+✅ Automatic **Text Translation (English → Indian Languages)**  
+✅ **Speech-to-Text Transcription** from audio and video files  
+✅ Supports **Gujarati (gu-IN)** and **Hindi (hi-IN)**  
+✅ **AI-based NLP & Speech Recognition**  
+✅ **Audio extraction from video files** using MoviePy  
+✅ End-to-end **Python automation with API integration**
+
+---
+
+## 🧠 Technologies Used
+
+- Python  
+- SarvamAI API  
+- Natural Language Processing (NLP)  
+- Speech Recognition  
+- MoviePy (Audio extraction from video)  
+- REST API Integration  
+- Jupyter Notebook  
+
+---
+
+## 📌 Use Cases
+
+- AI Voice Assistants  
+- Multilingual Customer Support Automation  
+- Regional Language Content Generation  
+- Accessibility Tools for Speech-Impaired Users  
+- Video-to-Text Transcription Systems  
+
+---
+
+## 🔹 Module 1: Text Translation (Text → Text)
+
+This module takes English text as input and translates it into Indian regional languages using AI.
+
+### ✅ Example Use Case:
+- Input: `"Hi, My Name is Vinayak."`
+- Output: Translated Gujarati Text
+
+### ✅ Key Capabilities:
+- Auto language detection
+- Supports multiple Indian languages
+- Gender-based voice customization
+
+---
+
+## 🔹 Module 2: Speech-to-Text Transcription (Audio → Text)
+
+This module converts spoken language from **audio or video files** into readable text using deep learning-based speech models.
+
+### ✅ Supported Formats:
+- WAV
+- MP4 (after audio extraction)
+
+## 🛠 Installation & Setup
+
+### 1️⃣ Install Required Libraries
+```bash
+pip install sarvamai moviepy
+
